@@ -1,0 +1,7 @@
+{
+    "productName": "JavaMavenProject",
+    "version": "0.0.1-SNAPSHOT",
+    "description": "test maven project",
+    "application-type": "web",
+    "artifact-type": "maven"
+}
