@@ -22,6 +22,16 @@ pipeline {
                 MvnBuild(Operation: params.Operation) 
             }
         }
+        stage('Deploy to Tomcat') {
+            when{
+                anyOf {
+                    environment name: 'Operation', value: 'deploy'
+                }
+            }
+            steps {
+                deployToTomcat()
+            }
+        }
        
     }
 }
